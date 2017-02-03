@@ -5,6 +5,7 @@
 <title>Movies</title>
 <meta name="author" content="timin">
 <meta name="generator" content="potato">
+<link href="icon.ico" rel="shortcut icon" type="image/x-icon">
 <link href="Cinema_website.css" rel="stylesheet">
 <link href="Movies.css" rel="stylesheet">
 <script src="jquery-1.11.3.min.js"></script>
@@ -218,6 +219,15 @@ $(document).ready(function()
    {
       $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:150});
    });
+   $("#RollOverText24").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).height();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.80},{queue:false, duration:150});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:150});
+   });
 });
 </script>
 </head>
@@ -228,10 +238,10 @@ $(document).ready(function()
 <div id="wb_Image2" style="position:absolute;left:0px;top:67px;width:1280px;height:100px;z-index:1;">
 <img src="images/top.png" id="Image2" alt=""></div>
 <div id="wb_Image1" style="position:absolute;left:20px;top:18px;width:672px;height:84px;z-index:2;">
-<a href="./Index.html"><img src="images/Logo web2.png" id="Image1" alt=""></a></div>
+<a href="./index.html"><img src="images/Logo web2.png" id="Image1" alt=""></a></div>
 <div id="wb_TabMenu1" style="position:absolute;left:0px;top:167px;width:1278px;height:78px;z-index:3;overflow:hidden;">
 <ul id="TabMenu1">
-<li><a href="./Index.html" title="Index">Index</a></li>
+<li><a href="./index.html" title="index">Home</a></li>
 <li><a href="./Movies.html" title="Movies" class="active">Movies</a></li>
 </ul>
 </div>
@@ -443,6 +453,14 @@ $(document).ready(function()
       <div class="title">Kimi no na wa</div>
       <p class="description">(Your Name)</p>
       <a class="link" href="./Kiminonawa.html">INFO</a>
+   </div>
+</div>
+<div id="RollOverText24" style="overflow:hidden;position:absolute;left:230px;top:711px;width:200px;height:300px;z-index:40;">
+   <img alt="Beyond the Boundary" class="image" src="images/KNK.jpg">
+   <div class="caption">
+      <div class="title">Beyond the Boundary</div>
+      <p class="description"></p>
+      <a class="link" href="./KNK.html">INFO</a>
    </div>
 </div>
 </div>
