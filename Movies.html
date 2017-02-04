@@ -273,6 +273,24 @@ $(document).ready(function()
    {
       $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:150});
    });
+   $("#RollOverText30").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).height();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.80},{queue:false, duration:150});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:150});
+   });
+   $("#RollOverText31").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).height();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.80},{queue:false, duration:150});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:150});
+   });
 });
 </script>
 </head>
@@ -342,7 +360,7 @@ $(document).ready(function()
       <a class="link" href="./BTTF.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText5" style="overflow:hidden;position:absolute;left:15px;top:1094px;width:200px;height:300px;z-index:20;">
+<div id="RollOverText5" style="overflow:hidden;position:absolute;left:230px;top:1094px;width:200px;height:300px;z-index:20;">
    <img alt="Children Who Chase Lost Voices" class="image" src="images/Children Who Chase Lost Voices_poster.jpg">
    <div class="caption">
       <div class="title">Children Who Chase Lost Voices</div>
@@ -350,7 +368,7 @@ $(document).ready(function()
       <a class="link" href="./Childrenwhochaselostvoices.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText6" style="overflow:hidden;position:absolute;left:230px;top:1094px;width:200px;height:300px;z-index:21;">
+<div id="RollOverText6" style="overflow:hidden;position:absolute;left:445px;top:1094px;width:200px;height:300px;z-index:21;">
    <img alt="Coraline" class="image" src="images/Coraline_poster.jpg">
    <div class="caption">
       <div class="title">Coraline</div>
@@ -366,7 +384,7 @@ $(document).ready(function()
       <a class="link" href="./DieHard.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText8" style="overflow:hidden;position:absolute;left:15px;top:1860px;width:200px;height:300px;z-index:23;">
+<div id="RollOverText8" style="overflow:hidden;position:absolute;left:230px;top:1860px;width:200px;height:300px;z-index:23;">
    <img alt="Ghostbusters" class="image" src="images/Ghostbusters_Poster.jpg">
    <div class="caption">
       <div class="title">Ghostbusters</div>
@@ -414,7 +432,7 @@ $(document).ready(function()
       <a class="link" href="./JerseyBoys.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText14" style="overflow:hidden;position:absolute;left:15px;top:3392px;width:200px;height:300px;z-index:29;">
+<div id="RollOverText14" style="overflow:hidden;position:absolute;left:230px;top:3392px;width:200px;height:300px;z-index:29;">
    <img alt="Kizumonogatari" class="image" src="images/kizu1_poster.jpg">
    <div class="caption">
       <div class="title">Kizumonogatari</div>
@@ -478,7 +496,7 @@ $(document).ready(function()
       <a class="link" href="./Sully.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText23" style="overflow:hidden;position:absolute;left:230px;top:3392px;width:200px;height:300px;z-index:37;">
+<div id="RollOverText23" style="overflow:hidden;position:absolute;left:15px;top:3392px;width:200px;height:300px;z-index:37;">
    <img alt="Kimi no na wa" class="image" src="images/kiminonawa_poster.jpg">
    <div class="caption">
       <div class="title">Kimi no na wa</div>
@@ -542,12 +560,28 @@ $(document).ready(function()
       <a class="link" href="./Jungle_book.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText29" style="overflow:hidden;position:absolute;left:230px;top:1860px;width:200px;height:300px;z-index:45;">
+<div id="RollOverText29" style="overflow:hidden;position:absolute;left:15px;top:1860px;width:200px;height:300px;z-index:45;">
    <img alt="Ghost in the Shell" class="image" src="images/Ghostintheshell1995_poster.jpg">
    <div class="caption">
       <div class="title">Ghost in the Shell</div>
       <p class="description">(1995)</p>
       <a class="link" href="./ghostintheshell.html">INFO</a>
+   </div>
+</div>
+<div id="RollOverText30" style="overflow:hidden;position:absolute;left:15px;top:1094px;width:200px;height:300px;z-index:46;">
+   <img alt="Children Who Chase Lost Voices" class="image" src="images/smolchook_poster.jpg">
+   <div class="caption">
+      <div class="title">Children Who Chase Lost Voices</div>
+      <p class="description"></p>
+      <a class="link" href="./Chickenlittle.html">INFO</a>
+   </div>
+</div>
+<div id="RollOverText31" style="overflow:hidden;position:absolute;left:445px;top:1860px;width:200px;height:300px;z-index:47;">
+   <img alt="The Good Dinosaur" class="image" src="images/goodDino_poster.jpg">
+   <div class="caption">
+      <div class="title">The Good Dinosaur</div>
+      <p class="description"></p>
+      <a class="link" href="./TehGudDino.html">INFO</a>
    </div>
 </div>
 </div>
