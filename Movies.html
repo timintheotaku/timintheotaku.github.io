@@ -345,15 +345,6 @@ $(document).ready(function()
    {
       $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:150});
    });
-   $("#RollOverText38").hover(function()
-   {
-      var y = $(this).height() - $(".caption", this).height();
-      $(".caption", this).css("top", y);
-      $(".caption", this).stop().animate({opacity: 0.80},{queue:false, duration:150});
-   }, function()
-   {
-      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:150});
-   });
    $("#RollOverText39").hover(function()
    {
       var y = $(this).height() - $(".caption", this).height();
@@ -713,15 +704,7 @@ $(document).ready(function()
       <a class="link" href="./Koenokatachi.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText38" style="overflow:hidden;position:absolute;left:1073px;top:328px;width:200px;height:300px;z-index:54;">
-   <img alt="The Aviator" class="image" src="images/aviator_poster.jpg">
-   <div class="caption">
-      <div class="title">The Aviator</div>
-      <p class="description"></p>
-      <a class="link" href="./Aviator.html">INFO</a>
-   </div>
-</div>
-<div id="RollOverText39" style="overflow:hidden;position:absolute;left:859px;top:4924px;width:200px;height:300px;z-index:55;">
+<div id="RollOverText39" style="overflow:hidden;position:absolute;left:859px;top:4924px;width:200px;height:300px;z-index:54;">
    <img alt="Steve Jobs" class="image" src="images/Stevejobs_poster.jpg">
    <div class="caption">
       <div class="title">Steve Jobs</div>
@@ -729,7 +712,7 @@ $(document).ready(function()
       <a class="link" href="./Steve_Jobs.html">INFO</a>
    </div>
 </div>
-<div id="RollOverText40" style="overflow:hidden;position:absolute;left:220px;top:4924px;width:200px;height:300px;z-index:56;">
+<div id="RollOverText40" style="overflow:hidden;position:absolute;left:220px;top:4924px;width:200px;height:300px;z-index:55;">
    <img alt="Steve Jobs" class="image" src="images/spirited away_poster.jpg">
    <div class="caption">
       <div class="title">Steve Jobs</div>
